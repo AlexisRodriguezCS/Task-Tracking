@@ -1,0 +1,32 @@
+/* TaskModal.css */
+.task-edit-close-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.task-edit-close-button span {
+  font-size: 35px;
+}
+
+.Boxes {
+  width: 70%;
+}
+.Boxes Select {
+  padding: 0px;
+  margin: 0px;
+}
+
+.save {
+  width: 70%;
+  background-color: rgb(84, 105, 212);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgb(84, 105, 212) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

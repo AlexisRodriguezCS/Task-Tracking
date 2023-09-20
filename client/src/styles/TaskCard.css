@@ -1,0 +1,69 @@
+/* Task.css (taskcard.js)*/
+.task {
+  text-decoration: none;
+  margin-bottom: 20px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.task-title,
+.task-priority,
+.task-date {
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.Low,
+.Medium,
+.HIGH {
+  width: fit-content;
+  border-radius: 3px;
+  padding: 0px 6px;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0px;
+}
+
+.Low {
+  color: rgb(28, 56, 41);
+  background: rgb(219, 237, 219);
+}
+
+.Medium {
+  color: rgb(64, 44, 27);
+  background: rgb(253, 236, 200);
+}
+
+.HIGH {
+  background: rgb(255, 226, 221);
+  color: rgb(93, 23, 21);
+}
+
+.task {
+  position: relative; /* Set position to relative for the task card */
+}
+
+.task-buttons {
+  position: absolute; /* Set position to absolute for the buttons */
+  top: 50%; /* Align buttons to the top of the card */
+  right: 3%; /* Align buttons to the right of the card */
+  transform: translateY(-50%); /* Center vertically */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  background-color: rgb(84, 105, 212);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}

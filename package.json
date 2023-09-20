@@ -1,0 +1,44 @@
+{
+  "name": "task-management-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexisRodriguezCS/task-management-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexisRodriguezCS/task-management-app/issues"
+  },
+  "homepage": "https://github.com/AlexisRodriguezCS/task-management-app#readme",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^8.2.1",
+    "cookie": "^0.5.0",
+    "cors": "^2.8.5",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.4.0",
+    "dotenv": "^16.3.1",
+    "jest": "^29.6.4",
+    "mongoose": "^7.5.0",
+    "sinon": "^15.2.0"
+  }
+}

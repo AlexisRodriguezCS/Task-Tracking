@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  background-color: white;
+  width: 24%;
+}
+
+.column-header {
+  position: sticky;
+  top: calc(8vh + 5px);
+  backdrop-filter: blur(5px);
+  padding: 10px 0px;
+  z-index: 99;
+  display: flex;
+  margin: 10px 0px;
+}
+
+.column-top-left {
+  display: inline-flex;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.column-top-left p:first-child {
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.column-top-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.column-header button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tasks-length {
+  line-height: 1.5;
+}
+
+.column-top-left p:last-child,
+.column-top-right button:last-child {
+  padding-left: 10px;
+}
+
+.To-Do {
+  color: rgb(50, 48, 44);
+  background: rgb(227, 226, 224);
+}
+
+.In-Progress {
+  color: rgb(64, 44, 27);
+  background: rgb(253, 236, 200);
+}
+
+.Needs-Review {
+  color: rgb(73, 41, 14);
+  background: rgb(250, 222, 201);
+}
+
+.Completed {
+  color: rgb(28, 56, 41);
+  background: rgb(219, 237, 219);
+}
+
+.new-task {
+  border: none;
+  background-color: white;
+  user-select: none;
+  transition: background-color 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 1.2;
+  min-width: 0px;
+  padding-left: 6px;
+  padding-right: 8px;
+  color: rgba(55, 53, 47, 0.5);
+  width: 100%;
+}
+
+.new-task:hover,
+.task:hover {
+  background-color: #edece9;
+}
+
+/* CSS for screens 768px and lower */
+@media (max-width: 768px) {
+  .column-header {
+    position: static;
+    top: none;
+    backdrop-filter: none;
+  }
+
+  .column {
+    width: 40%;
+  }
+}

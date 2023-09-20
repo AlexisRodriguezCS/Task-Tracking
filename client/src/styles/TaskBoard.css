@@ -1,0 +1,25 @@
+/* Default CSS for desktop (1024px) */
+.task-board {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* CSS for tablets (768px and lower) */
+@media (max-width: 768px) {
+  .task-board {
+    flex-direction: row; /* Change direction to row */
+    flex-wrap: wrap; /* Allow columns to wrap */
+  }
+
+  .column {
+    width: 48%; /* Two columns per row */
+  }
+}
+
+/* CSS for phones (450px and lower) */
+@media (max-width: 500px) {
+  .column {
+    width: 100%; /* Full width, one column per row */
+  }
+}

@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: center;
+  min-height: 8vh;
+  /* width: 80%; */
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.7);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.title {
+  flex-grow: 1;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  overflow: hidden;
+  padding: 0.5rem 1.5rem;
+  outline: 0.188rem solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.login:hover {
+  color: #0a26b8;
+  background: rgba(10, 38, 184, 0.1);
+}
+
+.signup {
+  color: #fff;
+  background-color: #1976d2;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.signup:hover {
+  background-color: #1930d2;
+  color: white;
+}
+
+/* CSS for tablets (768px and lower) */
+@media (max-width: 768px) {
+}
+
+/* CSS for phones (500px and lower) */
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.4rem 0.4rem;
+  }
+}
+
+/* CSS for phones (320px and lower) */
+@media (max-width: 320px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.3rem;
+  }
+}

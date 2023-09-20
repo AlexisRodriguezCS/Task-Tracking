@@ -1,0 +1,44 @@
+/* Profile Dropdown Styles */
+.profile-container {
+  position: relative;
+}
+
+/* Profile Icon Styles */
+.svg-container {
+  width: 25px; /* Set the width you want for the icon */
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 100%; /* Position it below the profile icon */
+  right: 0; /* Align it to the right edge of the icon */
+  background-color: #fff; /* Background color of the dropdown */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+  border: 1px solid #ccc; /* Add a border for better separation */
+}
+
+/* Dropdown Button Styles */
+.dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Dropdown Button Hover Styles (Optional) */
+.dropdown button:hover {
+  background-color: #f2f2f2;
+}
+
+/* Show the dropdown when active */
+.profile-container:hover .dropdown {
+  display: block;
+}

@@ -1,0 +1,3 @@
+[build]
+  command = "npm install && cd server && npm install && cd ../client && npm install && npm run build"
+  publish = "client/public"     # Adjust this to the correct directory path

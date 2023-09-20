@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 92vh;
+}
