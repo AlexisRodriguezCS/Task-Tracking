@@ -30,7 +30,7 @@ The frontend of the application is hosted on Netlify, while the backend is deplo
 **You can access the live website at this link:
 <a href="https://trask-tracking-app.netlify.app/" target="_blank">Trask Tracking App</a>**
 
-<mark>Please note that the backend, hosted on Render's free tier for demonstration purposes, may take a minute or two to start up. Consequently, when you first create a task, sign up, or perform any other action involving an API call to the backend, the website may appear to experience a brief delay.</mark>
+<mark>**Please note that the backend, hosted on Render's free tier for demonstration purposes, may take a minute or two to start up. As a result, you may experience a slight delay, such as when creating a new task or signing up, as the website makes initial API calls to the backend. <ins>However, once the backend is up and running, the website will function as intended.**</ins></mark>
 
 ### Key Technologies Used
 
