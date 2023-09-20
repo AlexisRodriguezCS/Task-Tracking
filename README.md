@@ -24,9 +24,13 @@ The **Task Tracking App** is a dynamic web application built on the **MERN** (Mo
 
 One of the project's core features is its integration of JSON Web Tokens (JWT) for robust user authentication. With JWT, users can securely access their tasks and data while enjoying a personalized experience. This app empowers users to categorize tasks based on their status, set due dates, and prioritize them, facilitating efficient task management. It is a versatile tool suitable for individuals and teams seeking to enhance their productivity and stay organized.
 
+### Hosting
+
 The frontend of the application is hosted on Netlify, while the backend is deployed on Render.
 **You can access the live website at this link:
 <a href="https://trask-tracking-app.netlify.app/" target="_blank">Trask Tracking App</a>**
+
+<mark>Please note that the backend, hosted on Render's free tier for demonstration purposes, may take a minute or two to start up. Consequently, when you first create a task, sign up, or perform any other action involving an API call to the backend, the website may appear to experience a brief delay.</mark>
 
 ### Key Technologies Used
 
