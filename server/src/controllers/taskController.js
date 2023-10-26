@@ -246,6 +246,21 @@ async function deleteTask(req, res) {
   }
 }
 
+/**
+ * startBackend - Controller function to start the backend.
+ *
+ * @param {Object} req - Express request object.
+ * @param {Object} res - Express response object.
+ */
+async function startBackend(req, res) {
+  try {
+    // Send a success message in JSON format to indicate that the backend has been started
+    res.status(200).json({ message: "Backend started successfully" });
+  } catch (error) {
+    res.status(500).json({ error: "Error starting the backend" });
+  }
+}
+
 // Export the controller functions
 module.exports = {
   createTask,
@@ -253,4 +268,5 @@ module.exports = {
   getTaskById,
   updateTask,
   deleteTask,
+  startBackend,
 };

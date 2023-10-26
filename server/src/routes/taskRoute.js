@@ -15,6 +15,9 @@ const router = express.Router(); // Create an instance of Express router
 const taskController = require("../controllers/taskController");
 const authMiddleware = require("../middlewares/authMiddleware");
 
+// Starts backend(free hosting)
+router.get("/start-backend", taskController.startBackend);
+
 // GET all tasks
 router.get("/", authMiddleware, taskController.getAllTasks);
 

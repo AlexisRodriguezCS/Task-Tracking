@@ -20,14 +20,48 @@
  * - It renders the TaskBoard component, which handles the organization and display of tasks.
  */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TaskBoard from "../components/TaskBoard";
+import LoadingModal from "../components/LoadingModal";
 import "../styles/Home.css";
 
 const Home = () => {
+  const [loading, setLoading] = useState(false); // State to manage loading modal visibility
+
+  // Function to start the backend and show the loading modal
+  const startBackend = () => {
+    setLoading(true); // Show the loading modal
+
+    // Make a request to the backend to start it
+    fetch("https://task-tracking-app.onrender.com/tasks/start-backend", {
+      method: "GET",
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          setLoading(false); // Hide the loading modal on success
+          console.log("Backend started successfully.");
+        } else {
+          setLoading(false); // Hide the loading modal on error
+          console.error(
+            "Failed to start the backend. Status code: " + response.status
+          );
+        }
+      })
+      .catch((error) => {
+        setLoading(false); // Hide the loading modal on error
+        console.error("Error while starting the backend:", error);
+      });
+  };
+
+  // Trigger startBackend when the component mounts
+  useEffect(() => {
+    startBackend();
+  }, []); // The empty dependency array ensures it runs only once on mount
+
   return (
     <div className="home-container">
       <TaskBoard />
+      {loading && <LoadingModal />}
     </div>
   );
 };
