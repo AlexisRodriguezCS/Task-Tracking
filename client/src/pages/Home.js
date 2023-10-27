@@ -33,7 +33,7 @@ const Home = () => {
     setLoading(true); // Show the loading modal
 
     // Make a request to the backend to start it
-    fetch("https://task-tracking-app.onrender.com/tasks/start-backend", {
+    fetch("https://task-tracking-app.onrender.com/api/tasks/start-backend", {
       method: "GET",
     })
       .then((response) => {
